@@ -110,7 +110,7 @@ Single stub direct and indirect syscalling with runtime SSN resolving for window
 
 All the code required to do the SSN and address fetching is included in the file `src\syscall_resolve.rs`.
 
-There one core function used to retrieve the values called get_ssn, with 4 implementations, where the receive argument is the result of calling `crate::obf!(\<your function name\>)`, and the return values are the ssn (u16), and, in case of indirect syscalling, the address of the syscall/sysenter instruction that you want to use.
+There is one core function used to retrieve the values called `get_ssn`, with 4 implementations, where the received argument is the result of calling `crate::obf!(\<your function name\>)`, and the return values are the ssn (u16), and, in case of indirect syscalling, the address of the syscall/sysenter instruction that you want to use.
 
 * x86_64 direct:
   
