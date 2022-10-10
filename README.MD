@@ -36,6 +36,7 @@ Single stub direct and indirect syscalling with runtime SSN resolving for window
 ---
 ## Example:
 
+```rust
     #![allow(non_snake_case)]
     use ntapi::ntapi_base::CLIENT_ID;
     use rust_syscalls::syscall;
@@ -104,6 +105,7 @@ Single stub direct and indirect syscalling with runtime SSN resolving for window
         
         println!("\t[-] NtClose       status: {:#02X}", status);
     }
+```
 
 
 ## Implementing new SSN and syscall addresses runtime resolving methods:
